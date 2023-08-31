@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Loop through files in the current directory
+for file in *~; do
+    if [ -f "$file" ]; then
+        echo "Deleting file: $file"
+        rm "$file"
+    fi
+done
+
+echo "Deletion complete."
+
